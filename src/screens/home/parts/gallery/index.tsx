@@ -1,15 +1,27 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./style.module.scss";
 
+const images = [
+  "1.jpeg",
+  "2.jpg",
+  "3.jpeg",
+  "4.webp",
+  "5.webp",
+  "6.webp",
+  "7.jpg",
+  "8.jpeg",
+  "9.jpg",
+];
+
 export const GallerySection = component$(() => {
   return (
     <section class={styles.gallery_wrapper} id="gallery">
       <h2>גלריה</h2>
       <div class={styles.gallery}>
-        {Array.from({ length: 9 }).map((_, i) => (
+        {images.map((path, i) => (
           <div key={i}>
             <img
-              src={`https://source.unsplash.com/random?q=${i}`}
+              src={"/gallery/" + path}
               loading="lazy"
               width={400}
               height={400}

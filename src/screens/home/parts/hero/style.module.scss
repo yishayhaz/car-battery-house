@@ -1,0 +1,33 @@
+.hero {
+  padding: 10rem var(--page-padding-inline);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    flex: 1;
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1em;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 900px) {
+      text-align: center;
+    }
+  }
+
+  .thumbnail {
+    min-width: min(300px, 100%);
+
+    display: grid;
+    place-content: center;
+  }
+}

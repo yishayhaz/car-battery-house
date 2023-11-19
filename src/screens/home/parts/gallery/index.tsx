@@ -9,8 +9,8 @@ const images = [
   "5.webp",
   "6.webp",
   "7.jpg",
-  "9.jpg",
   "8.jpeg",
+  "9.jpg",
 ];
 
 export const GallerySection = component$(() => {

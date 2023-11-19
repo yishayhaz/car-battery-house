@@ -1,17 +1,21 @@
 .hero {
-  padding: 10rem var(--page-padding-inline);
+  padding: 5rem var(--page-padding-inline);
+
+  height: calc(80dvh - var(--header-height));
 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
 
   .content {
-    flex: 1;
+    @media (min-width: 768px) {
+      flex: 1;
+    }
 
     h1 {
       font-size: 3rem;
@@ -21,6 +25,16 @@
 
     @media (max-width: 900px) {
       text-align: center;
+
+      & > div {
+        display: none !important;
+      }
+    }
+
+    div {
+      margin-top: 1rem;
+
+      display: flex;
     }
   }
 

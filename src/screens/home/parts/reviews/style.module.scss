@@ -1,0 +1,21 @@
+.reviews_wrapper {
+  padding: 3rem var(--page-padding-inline);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .reviews {
+    display: flex;
+    gap: 1rem;
+
+    & > div {
+      flex: 1;
+      width: min(300px, 100%);
+
+      text-align: center;
+    }
+  }
+}

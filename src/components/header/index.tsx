@@ -1,33 +1,25 @@
-import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import styles from "./style.module.scss";
+import { Link } from "../link";
 
 export const Header = component$(() => {
-  const isMobile = useSignal(false);
-
-  useVisibleTask$(() => {
-    isMobile.value = window.innerWidth < 768;
-  });
-
   return (
     <header class={styles.header}>
       <div>
-        <img src="/battery.png" width={30} height={30} alt="battery" />
-        LOGO
+        <img src={"/logo.svg"} height={50} alt="battery" />
       </div>
       <nav>
         <ul>
-          {isMobile.value ? null : (
-            <>
-              <li>
-                <a href="#">בית</a>
-              </li>
-              <li>
-                <a href="#">גלריה</a>
-              </li>
-            </>
-          )}
           <li>
-            <a href="#">יצירת קשר</a>
+            <Link href="#hero">בית</Link>
+          </li>
+          <li>
+            <Link href="#gallery">גלריה</Link>
+          </li>
+          <li>
+            <Link active href="#callme">
+              יצירת קשר
+            </Link>
           </li>
         </ul>
       </nav>

@@ -21,19 +21,22 @@ const benefits = [
 
 export const BenefitsSection = component$(() => {
   return (
-    <section class={styles.benefits}>
-      {benefits.map((benefit, idx) => (
-        <div class={styles.benefit} key={idx}>
-          <img
-            src={`/benefits/${benefit.icon}`}
-            alt={benefit.title}
-            width={45}
-            height={45}
-          />
-          <h3>{benefit.title}</h3>
-          <p>{benefit.description}</p>
-        </div>
-      ))}
+    <section class={styles.benefits_wrapper}>
+      <h2>היתרונות שלנו</h2>
+      <div class={styles.benefits}>
+        {benefits.map((benefit, idx) => (
+          <div class={styles.benefit} key={idx}>
+            <img
+              src={`/benefits/${benefit.icon}`}
+              alt={benefit.title}
+              width={45}
+              height={45}
+            />
+            <h3>{benefit.title}</h3>
+            <p>{benefit.description}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 });

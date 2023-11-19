@@ -5,7 +5,7 @@ import { Link } from "../link";
 export const Callme = component$(() => {
   return (
     <div class={styles.callme} id="callme">
-      <Link active href="tel:+972528150022">
+      <Link active href="tel:+972528150022" target="_blank">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -19,7 +19,11 @@ export const Callme = component$(() => {
         </svg>
         052-8150022
       </Link>
-      <Link active href="">
+      <Link
+        active
+        href={`https://wa.me/972528150022?text=שלום, אני פונה אליך דרך האתר בקשר למצבר לרכב`}
+        target="_blank"
+      >
         <svg
           stroke="currentColor"
           fill="currentColor"

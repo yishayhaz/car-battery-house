@@ -14,8 +14,13 @@
   justify-content: center;
   gap: 0.5rem;
 
+  &.button {
+    color: white;
+    background-color: rgb(var(--primary));
+  }
+
   &:hover,
-  &[data-active="true"] {
+  &.active {
     background: rgba(var(--primary), 0.2);
     color: rgb(var(--primary));
   }

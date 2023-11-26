@@ -27,8 +27,10 @@ export default component$(() => {
           type="text/partytown"
           src="https://www.googletagmanager.com/gtag/js?id=AW-11417781719"
         />
-        <script defer type="text/partytown">
-          {`
+        <script
+          defer
+          type="text/partytown"
+          dangerouslySetInnerHTML={`
 window.dataLayer = window.dataLayer || [];
 
 function gtag() {
@@ -38,7 +40,7 @@ function gtag() {
 gtag('js', new Date());
 gtag('config', 'AW-11417781719');
 `}
-        </script>
+        ></script>
       </head>
 
       <body lang="en">

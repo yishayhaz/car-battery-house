@@ -15,7 +15,7 @@ export const HeroSection = component$(() => {
           מקצועי ואדיב 24/6 באיזור ירושלים והסביבה
         </p>
         <div>
-          <Link href="#callme" active>
+          <Link href="#callme" buttonStyle>
             צרו קשר
           </Link>
         </div>

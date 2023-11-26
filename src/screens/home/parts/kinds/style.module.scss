@@ -1,0 +1,48 @@
+.kinds_wrapper {
+  padding: 3rem var(--page-padding-inline);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .kinds {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    .img {
+      display: grid;
+      align-items: center;
+
+      img {
+        aspect-ratio: 1;
+        max-width: 300px;
+
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+    }
+
+    .content {
+      max-width: 600px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      gap: 2rem;
+
+      h3 {
+        text-decoration: underline;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

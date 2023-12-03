@@ -3,6 +3,7 @@ import {
   HeroSection,
   BenefitsSection,
   GallerySection,
+  ReplaceBatterySection,
   KindsSection,
 } from "./parts";
 import { Header } from "~/components/header";
@@ -15,6 +16,7 @@ export const HomeScreen = component$(() => {
       <HeroSection />
       <KindsSection />
       <BenefitsSection />
+      <ReplaceBatterySection />
       <GallerySection />
       {/* <ReviewsSection /> */}
       <Callme />

@@ -14,5 +14,9 @@ export const head: DocumentHead = {
       content: `תקועים בדרכים? הרכב לא מניע? נתקעתם בלי מצבר?
       אנחנו מבית המצבר נגיע עד אליכם עם המצבר שאתם צריכים, בכל זמן - שירות מקצועי ואדיב, ומחיר הוגן.`,
     },
+    {
+      name: "google-site-verification",
+      content: "NpjkdpDJJvsQZT2gEXq1vN2xiETKzbI4JldCeA3Cbz4",
+    },
   ],
 };

@@ -5,8 +5,11 @@ import { Link } from "../link";
 export const Header = component$(() => {
   return (
     <header class={styles.header}>
-      <div>
+      <div class={styles.logo}>
         <img src={"/logo.svg"} height={50} alt="battery" />
+      </div>
+      <div class={styles.location}>
+        <span>ירושלים והסביבה</span>
       </div>
       <nav>
         <ul>

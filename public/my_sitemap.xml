@@ -3,28 +3,35 @@
 
     <!-- Home Page -->
     <url>
-        <loc>https://bet-hamatzber.netlify.app/</loc>
+        <loc>https://bet-hamatzber.com/</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
 
     <!-- Hero Section -->
     <url>
-        <loc>https://bet-hamatzber.netlify.app/#hero</loc>
+        <loc>https://bet-hamatzber.com/#hero</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Blog Section -->
+    <url>
+        <loc>https://bet-hamatzber.com/#blog</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Gallery Section -->
     <url>
-        <loc>https://bet-hamatzber.netlify.app/#gallery</loc>
+        <loc>https://bet-hamatzber.com/#gallery</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Contact Section -->
     <url>
-        <loc>https://bet-hamatzber.netlify.app/#callme</loc>
+        <loc>https://bet-hamatzber.com/#callme</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

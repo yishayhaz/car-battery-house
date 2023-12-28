@@ -18,5 +18,9 @@ export const head: DocumentHead = {
       name: "google-site-verification",
       content: "NpjkdpDJJvsQZT2gEXq1vN2xiETKzbI4JldCeA3Cbz4",
     },
+    {
+      name: "google-site-verification",
+      content: "SaHs1z7ECM5IOAgFd6uLnzbpoTbFvE3QbE3I2LY3dXw",
+    },
   ],
 };

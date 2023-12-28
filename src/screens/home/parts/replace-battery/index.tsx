@@ -3,7 +3,7 @@ import styles from "./style.module.scss";
 
 export const ReplaceBatterySection = component$(() => {
   return (
-    <section class={styles.blog_wrapper}>
+    <section class={styles.blog_wrapper} id="blog">
       <div class={styles.blog}>
         <h2>למה ומתי מחליפים מצבר?</h2>
         <p>

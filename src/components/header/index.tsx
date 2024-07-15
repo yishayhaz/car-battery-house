@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./style.module.scss";
 import { Link } from "../link";
+import { Location } from "../location";
 
 export const Header = component$(() => {
   return (
@@ -8,9 +9,7 @@ export const Header = component$(() => {
       <div class={styles.logo}>
         <img src={"/logo.svg"} height={50} alt="battery" />
       </div>
-      <div class={styles.location}>
-        <span>ירושלים והסביבה</span>
-      </div>
+      <Location />
       <nav>
         <ul>
           <li>

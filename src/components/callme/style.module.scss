@@ -13,22 +13,28 @@
 
   padding: 1rem var(--page-padding-inline);
 
-  display: flex;
-  gap: 0.6rem;
+  & > div:first-child {
+    margin-bottom: 1rem;
+  }
 
-  a {
-    font-size: 1.5rem;
+  .btns {
+    display: flex;
+    gap: 0.6rem;
 
-    &:first-child {
-      flex: 1;
+    a {
+      font-size: 1.5rem;
 
-      border-start-end-radius: 0;
-      border-end-end-radius: 0;
-    }
+      &:first-child {
+        flex: 1;
 
-    &:last-child {
-      border-end-start-radius: 0;
-      border-start-start-radius: 0;
+        border-start-end-radius: 0;
+        border-end-end-radius: 0;
+      }
+
+      &:last-child {
+        border-end-start-radius: 0;
+        border-start-start-radius: 0;
+      }
     }
   }
 }

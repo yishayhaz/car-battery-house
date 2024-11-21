@@ -3,6 +3,6 @@ import styles from "./style.module.scss";
 
 export const Location = component$(() => (
   <div class={styles.location}>
-    <span>ירושלים והסביבה</span>
+    <span>ירושלים, מודיעין והסביבה</span>
   </div>
 ));
